@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport" />
+        <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+        <meta charset="UTF-8" />
+        <title>Notepad</title>
+        <link href="../../global/style.css" rel="stylesheet" />
+        <link href="../../global/component.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
+        <link href="css/logic.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <header class="flex">
+            <nav>
+                <button class="dropdownDisplay" title="File">File</button>
+                <div class="dropdown">
+                    <label for="bold">Bold</label>
+                    <label for="italic">Italic</label>
+                    <label for="underline">Underline</label>
+                    <hr />
+                    <label for="size">Font Size</label>
+                    <label for="wrap">Text wrap</label>
+                    <hr />
+                    <label for="black">Black Theme</label>
+                </div>
+
+                <button title="Edit">
+                    <label for="text">Edit</label>
+                </button>
+                <button title="Help">Help</button>
+            </nav>
+        </header>
+
+        <main class="flex-column">
+            <input id="bold" name="" type="checkbox" />
+            <input id="italic" name="" type="checkbox" />
+            <input id="underline" name="" type="checkbox" />
+            <input id="size" name="" type="checkbox" />
+            <input id="wrap" name="" type="checkbox" />
+            <input id="black" name="" type="checkbox" />
+
+            <textarea id="text"></textarea>
+        </main>
+    </body>
+</html>

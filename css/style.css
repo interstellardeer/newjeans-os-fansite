@@ -1,0 +1,222 @@
+/* Principal */
+
+main {
+    background-image: url(../images/windows.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+/* Principal App */
+
+main .app {
+    border: 3px solid var(--azul-janela);
+    border-radius: 5px;
+    display: none;
+}
+
+main .header {
+    background-color: var(--azul-janela);
+    padding: 5px 3px 8px;
+    height: 40px;
+    gap: 10px;
+}
+
+main .appName {
+    width: 100%;
+}
+
+main .appName p {
+    color: white;
+}
+
+main .appControls {
+    gap: 3px;
+}
+
+main .appControls label {
+    font-size: 0;
+    cursor: pointer;
+    height: 100%;
+}
+
+#internet,
+#notepad {
+    height: 95%;
+    width: 100%;
+}
+
+#calculator {
+    position: absolute;
+    height: 460px;
+}
+
+/* Rodapé */
+
+footer {
+    background: var(--azul);
+    height: 35px;
+}
+
+/* Rodapé start */
+
+footer #start {
+    position: relative;
+}
+
+footer #start button {
+    height: 100%;
+    font-size: 0;
+}
+
+footer #start #menu {
+    position: absolute;
+    display: none;
+    bottom: 35px;
+    left: 1px;
+    border: 3px solid var(--azul-janela);
+    border-radius: 5px;
+}
+
+footer #start #menu:hover,
+footer #start:focus-within #menu {
+    display: block;
+}
+
+footer #start #menu img {
+    height: 27px;
+}
+
+footer #start #menu #avatar {
+    background-color: var(--azul);
+    padding: 5px;
+    gap: 10px;
+    align-items: center;
+}
+
+footer #start #menu #avatar p {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+footer #start #menu #avatar img {
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+footer #start #menu #menuColumns {
+    width: 95vw;
+    max-width: 400px;
+}
+
+footer #start #menu #menuColumns > div {
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+}
+
+footer #start #menu #menuColumns div div,
+footer #start #menu #menuColumns div label,
+footer #start #menu #menuColumns div a {
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+    padding: 1px;
+}
+
+footer #start #menu #menuColumns div div:hover,
+footer #start #menu #menuColumns div label:hover,
+footer #start #menu #menuColumns div a:hover {
+    color: white;
+    background-color: var(--azul);
+}
+
+footer #start #menu #menuColumns #menuFirstColumn {
+    background-color: white;
+}
+
+footer #start #menu #menuColumns #menuLastColumn {
+    background-color: #d3e5fa;
+}
+
+footer #start #menu #menuColumns #menuFirstColumn #allPrograms {
+    justify-content: center;
+    font-weight: bold;
+}
+
+footer #start #menu #menuSystem {
+    background-color: var(--azul);
+    justify-content: end;
+    gap: 10px;
+    padding: 10px;
+}
+
+footer #start #menu #menuSystem div {
+    align-items: center;
+    color: white;
+    gap: 5px;
+    padding: 1px;
+    cursor: pointer;
+}
+
+footer #start #menu #menuSystem div:hover {
+    background-color: blue;
+}
+
+/* Rodapé precess */
+
+footer #process {
+    width: 100%;
+    padding: 0 15px;
+    min-width: 0;
+    gap: 5px;
+}
+
+footer #process label {
+    padding: 5px;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--azul-claro);
+    width: 200px;
+    cursor: pointer;
+    color: white;
+    display: none;
+
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+footer #process label:hover {
+    background-color: #55a0ff;
+}
+
+/* Rodapé notificação */
+
+footer #notification {
+    align-items: center;
+    background: var(--azul-notification);
+    border-left: 1px solid var(--azul);
+    padding: 5px;
+    gap: 5px;
+}
+
+footer #notification img {
+    cursor: pointer;
+    height: 22px;
+}
+
+footer #notification p {
+    color: white;
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 500px) {
+    footer #notification img {
+        display: none;
+    }
+}

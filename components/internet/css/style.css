@@ -1,0 +1,24 @@
+.vr {
+    border-right: 1px solid gray;
+    padding-right: 5px;
+    margin-right: 5px;
+}
+
+header section {
+    align-items: center;
+    gap: 5px;
+    padding: 5px 0;
+}
+
+header img {
+    width: 30px;
+    cursor: pointer;
+}
+
+header p:last-of-type {
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+    width: 500px;
+    overflow: hidden;
+}

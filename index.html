@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport" />
+        <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+        <meta charset="UTF-8" />
+        <title>Windows CSS</title>
+        <link href="global/style.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
+        <link href="css/displayLogic.css" rel="stylesheet" />
+    </head>
+
+    <audio autoplay loop>
+        <source src="https://audio.jukehost.co.uk/YVCDR5RwffvSM5ovg5DSN9zUWEu8ylMv" type="audio/mp3">
+    </audio>
+
+    <body>
+        <input checked id="notepadMinimize" name="notepadControl" type="radio" />
+        <input id="notepadMaximize" name="notepadControl" type="radio" />
+        <input id="notepadClose" name="notepadControl" type="radio" />
+
+        <input checked id="calculatorMinimize" name="calculatorControl" type="radio" />
+        <input id="calculatorMaximize" name="calculatorControl" type="radio" />
+        <input id="calculatorClose" name="calculatorControl" type="radio" />
+
+        <input checked id="internetMinimize" name="internetControl" type="radio" />
+        <input id="internetMaximize" name="internetControl" type="radio" />
+        <input id="internetClose" name="internetControl" type="radio" />
+
+        <main class="flex">
+            <section class="app flex-column" id="internet">
+                <div class="header flex">
+                    <div class="appName flex">
+                        <img alt="" src="images/ie.png" />
+                        <p>Internet</p>
+                    </div>
+
+                    <div class="appControls flex">
+                        <label for="internetMinimize">
+                            <img alt="" src="images/minimize.png" />
+                        </label>
+                        <label for="notepadMinimize">
+                            <img alt="" src="images/max.png" />
+                        </label>
+                        <label for="internetClose">
+                            <img alt="" src="images/close.png" />
+                        </label>
+                    </div>
+                </div>
+
+                <iframe src="components/internet"></iframe>
+            </section>
+
+            <section class="app flex-column" id="notepad">
+                <div class="header flex">
+                    <div class="appName flex">
+                        <img alt="" src="images/notepad.png" />
+                        <p>Notepad</p>
+                    </div>
+
+                    <div class="appControls flex">
+                        <label for="notepadMinimize">
+                            <img alt="" src="images/minimize.png" />
+                        </label>
+                        <label for="internetMinimize">
+                            <img alt="" src="images/max.png" />
+                        </label>
+                        <label for="notepadClose">
+                            <img alt="" src="images/close.png" />
+                        </label>
+                    </div>
+                </div>
+
+                <iframe src="components/notepad"></iframe>
+            </section>
+
+            <section class="app flex-column" id="calculator">
+                <div class="header flex">
+                    <div class="appName flex">
+                        <img alt="" src="images/calculator.png" />
+                        <p>Calculator</p>
+                    </div>
+
+                    <div class="appControls flex">
+                        <label for="calculatorMinimize">
+                            <img alt="" src="images/minimize.png" />
+                        </label>
+                        <label for="calculatorMaximize">
+                            <img alt="" src="images/max.png" style="opacity: 0.4; cursor: default" />
+                        </label>
+                        <label for="calculatorClose">
+                            <img alt="" src="images/close.png" />
+                        </label>
+                    </div>
+                </div>
+
+                <iframe src="components/calculator"></iframe>
+            </section>
+        </main>
+
+        <footer class="flex">
+            <section class="flex" id="start">
+                <button>
+                    <img alt="" src="images/start.png" />
+                </button>
+
+                <div class="flex-column" id="menu">
+                    <div class="flex" id="avatar">
+                        <img alt="" src="images/user.png" />
+                        <p>Windows User</p>
+                    </div>
+
+                    <div class="flex" id="menuColumns">
+                        <div class="flex-column" id="menuFirstColumn">
+                            <label class="flex" for="internetMaximize">
+                                <img alt="" src="images/ie.png" />
+                                Internet
+                            </label>
+                            <div class="flex">
+                                <img alt="" src="images/email.png" />
+                                <p>E-mail</p>
+                            </div>
+                            <hr />
+                            <div class="flex">
+                                <img alt="" src="images/msn.png" />
+                                <p>MSN</p>
+                            </div>
+                            <div class="flex">
+                                <img alt="" src="images/winPlayer.png" />
+                                <p>Windows Media Player</p>
+                            </div>
+                            <div class="flex">
+                                <img alt="" src="images/messenger.png" />
+                                <p>Windows Messenger</p>
+                            </div>
+                            <label class="flex" for="calculatorMaximize">
+                                <img alt="" src="images/calculator.png" />
+                                Calculator
+                            </label>
+                            <label class="flex" for="notepadMaximize">
+                                <img alt="" src="images/notepad.png" />
+                                Notepad
+                            </label>
+                            <hr />
+                            <div class="flex" id="allPrograms">
+                                <p>All Programs</p>
+                                <img alt="" src="images/run.ico" />
+                            </div>
+                        </div>
+
+                        <div class="flex-column" id="menuLastColumn">
+                            <div class="flex">
+                                <img alt="" src="images/documents.png" />
+                                <p>My Documents</p>
+                            </div>
+                            <div class="flex">
+                                <img alt="" src="images/pictures.png" />
+                                <p>My Pictures</p>
+                            </div>
+                            <div class="flex">
+                                <img alt="" src="images/musics.png" />
+                                <p>My Music</p>
+                            </div>
+                            <div class="flex">
+                                <img alt="" src="images/computer.png" />
+                                <p>My Computer</p>
+                            </div>
+                            <hr />
+                            <a class="flex" href="https://github.com/interstellardeer/newjeans-os" target="_blank">
+                                <img alt="" src="images/github-logo.png" />
+                                <p>GitHub</p>
+                            </a>
+                            <a class="flex" href="https://www.linkedin.com/" target="_blank">
+                                <img alt="" src="images/linkedin.png" />
+                                <p>Linkedin</p>
+                            </a>
+                            <hr />
+                            <div class="flex">
+                                <img alt="" src="images/help.png" />
+                                <p>Help</p>
+                            </div>
+                            <div class="flex">
+                                <img alt="" src="images/search.png" />
+                                <p>Search</p>
+                            </div>
+                            <div class="flex">
+                                <img alt="" src="images/run.png" />
+                                <p>Run...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex" id="menuSystem">
+                        <div class="flex">
+                            <img alt="" src="images/logoff.png" />
+                            <p>Log OFF</p>
+                            <p></p>
+                        </div>
+
+                        <div class="flex">
+                            <img alt="" src="images/turnoff.png" />
+                            <p>Turn OFF Computer</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="flex" id="process">
+                <label for="internetMaximize" id="internetProcess" title="Internet Explorer">
+                    <img alt="" src="images/ie.png" />
+                    Internet Explorer
+                </label>
+                <label for="notepadMaximize" id="notepadProcess" title="Notepad">
+                    <img alt="" src="images/notepad.png" />
+                    Notepad
+                </label>
+                <label for="calculatorMaximize" id="calculatorProcess" title="Calculator">
+                    <img alt="" src="images/calculator.png" />
+                    Calculator
+                </label>
+            </section>
+
+            <section class="flex" id="notification">
+                <img alt="" src="images/drivers.png" title="Drivers" />
+                <img alt="" src="images/sound.png" title="Volume" />
+                
+                <p title="27/06/22">07:00 PM</p>
+            </section>
+        </footer>
+    </body>
+</html>
