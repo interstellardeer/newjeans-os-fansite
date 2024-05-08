@@ -34,23 +34,22 @@
     </header>
 
     <main class="flex">
-        <!-- Empty div to load content dynamically -->
-        <div id="content"></div>
+        <body style="background-color: white;">
+
+          <h1> Newjeans Member </h1>
+            <br> 
+            <p>
+            <ul>
+                <li><a href="../website/member/hanni.html">Hanni</a></li>
+                <li><a href="../website/member/danielle.html">Danielle</a></li>
+                <li><a href="../website/member/haerin.html">Haerin</a></li>
+                <li><a href="../website/member/hyein.html">Hyein</a></li>
+                <li><a href="../website/member/minji.html">Minji</a></li>
+            </ul>
+            </p>
+        </body>
+    
     </main>
-
-    <!-- Include jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            // URL of the HTML page to load
-            var pageUrl = "../website/index.html";
-
-            // Load the content of the HTML page into the container
-            $.get(pageUrl, function(data) {
-                $("#content").html(data);
-            });
-        });
-    </script>
 </body>
 
 </html>
