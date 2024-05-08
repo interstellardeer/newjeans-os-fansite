@@ -34,8 +34,23 @@
     </header>
 
     <main class="flex">
-        <iframe src="../website/index.html"></iframe>
+        <!-- Empty div to load content dynamically -->
+        <div id="content"></div>
     </main>
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // URL of the HTML page to load
+            var pageUrl = "../website/index.html";
+
+            // Load the content of the HTML page into the container
+            $.get(pageUrl, function(data) {
+                $("#content").html(data);
+            });
+        });
+    </script>
 </body>
 
 </html>
