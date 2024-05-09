@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            margin: 10;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        p {
+            margin-top: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        
+        <h1>Danielle</h1>
+
+        
+        <img src="../../../images/danielle.png" alt="danielle" style="width: 100px;" />
+        
+        <h2>Profile</h2>
+        <ul>
+            li><span class="profile">Full Name:</span> Danielle (다니엘)</li>
+            <li><span class="profile">Position in NewJeans:</span> Vocalis, dancer</li>
+            <li><span class="profile">Other Activities:</span> House ambassador for Celine (since 2024)
+            </li>
+        </ul>
+        </section>
+        <section class="interests">
+            <h2>Interests</h2>
+            <ul class="interest-list">
+                <li>Performing - Singing and dancing are her main passions.</li>
+                <li>Fashion - Her bright and cheerful personality often shines through in her stage outfits.</li>
+            </ul>
+        </section>
+        <section class="fun-facts">
+            <h2>Fun Facts</h2>
+            <ul class="fun-fact-list">
+                <li>Danielle has a mixed heritage, with an Australian father and a Korean mother.</li>
+                <li>Danielle started her career young, appearing in Korean TV shows like Rainbow Kindergarten, Jesse's Play Kitchen, and My Heart's Crayon around 2011.</li>
+                <li>She was also active as a child model.</li>
+                <li>Danielle is the only member of NewJeans with mixed heritage.</li>
+            </ul>
+        </section>
+
+        <button onclick="goBack()">Back</button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+</body>
+
+</html>
